@@ -36,3 +36,6 @@ buttonLöschen.addEventListener("click",function() {
     gridParent.innerHTML = "";
     setupGrid(16);
 });
+
+// Standard Anzahl der Quadrate beim laden 16 * 16
+window.onload = setupGrid(16);
