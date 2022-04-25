@@ -22,4 +22,11 @@ function setupGrid(size) {
 
         gridParent.appendChild(gridElement);
     }
-}
+};
+
+
+// Der Wert des Nutzers soll Bei Klick auf den Button die gewünschte Anzahl bestimmen
+let buttonAnzahl = document.getElementById("anzahl");
+buttonAnzahl.addEventListener("click",function() {
+    setupGrid(pompt("Geben sie die gwünschte Nummer der Quadrate ein. (Max. 200"));
+})
