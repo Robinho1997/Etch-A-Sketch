@@ -29,4 +29,10 @@ function setupGrid(size) {
 let buttonAnzahl = document.getElementById("anzahl");
 buttonAnzahl.addEventListener("click",function() {
     setupGrid(pompt("Geben sie die gwünschte Nummer der Quadrate ein. (Max. 200"));
-})
+});
+
+let buttonLöschen = document.getElementById("clear");
+buttonLöschen.addEventListener("click",function() {
+    gridParent.innerHTML = "";
+    setupGrid(16);
+});
